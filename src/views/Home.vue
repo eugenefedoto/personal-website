@@ -1,7 +1,9 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <video id="hero" autoplay="autoplay" loop="loop" muted="muted">
+        <source src="@/assets/hero.webm" type="video/webm">
+        <source src="@/assets/hero.mp4" type="video/mp4">
+    </video>
   </div>
 </template>
 
@@ -16,3 +18,13 @@ import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
 })
 export default class Home extends Vue {}
 </script>
+
+<style lang="scss">
+#hero {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+</style>
