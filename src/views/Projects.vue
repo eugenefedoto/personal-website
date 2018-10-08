@@ -99,9 +99,10 @@
 
 <style lang="scss" scoped>
 #projects {
-  width: 940px;
+  // width: 940px;
   // margin: 0 auto;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   .card-project {
     background: #2e3138;
