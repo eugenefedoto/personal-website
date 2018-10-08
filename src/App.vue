@@ -14,11 +14,10 @@
 
 <style lang="scss">
 @import "~normalize.css";
+
 .wrapper-nav {
-  position: absolute;
   font-family: Nobile, sans-serif;
   font-size: 2rem;
-  z-index: 1;
   display: flex;
   margin-top: 5vh;
   margin-left: 1vw;

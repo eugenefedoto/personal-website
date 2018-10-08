@@ -29,10 +29,11 @@ export default class Home extends Vue {}
 #home {
   #hero {
     position: fixed;
+    top: -30vh;
     right: 0;
-    bottom: 0;
     min-width: 100%;
     min-height: 100%;
+    z-index: -1;
   }
   .wrapper-desc {
     z-index: 1;
