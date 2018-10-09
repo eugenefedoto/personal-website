@@ -16,7 +16,7 @@
         </div>
       </div>
       <div class="links">
-          <a target="_blank" href="https://github.com/eugenefedoto/eugenefedoto.github.io"><img src="@/assets/Octocat.png" alt="" width="40" height="33"></a>
+          <a target="_blank" href="https://github.com/eugenefedoto/personal-website"><img src="@/assets/Octocat.png" alt="" width="40" height="33"></a>
         </div>
     </div>
     <div id="love-you-forever" class="card-project">
