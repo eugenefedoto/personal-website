@@ -1,6 +1,6 @@
 # portfolio-website
 
-Deployment of https://github.com/eugenefedoto/personal-website.
+Deployment of https://github.com/eugenefedoto/eugenefedoto.github.io.
 
 ## Project setup
 ```
