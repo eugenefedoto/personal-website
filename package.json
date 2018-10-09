@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "rm -rf dist && yarn build && cd dist && git init && git add . && git commit -m \"Initial commit\" && git remote add origin git@github.com:eugenefedoto/eugenefedoto.github.io.git && git push -f origin master:gh-pages"
   },
   "dependencies": {
     "normalize.css": "^8.0.0",
