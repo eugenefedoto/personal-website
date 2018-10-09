@@ -1,5 +1,7 @@
 # portfolio-website
 
+Deployment of https://github.com/eugenefedoto/personal-website.
+
 ## Project setup
 ```
 yarn install
