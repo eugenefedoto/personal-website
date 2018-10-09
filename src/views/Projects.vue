@@ -11,7 +11,7 @@
             Vue - Flexbox - Webpack - SCSS - TypeScript
           </div>
         <div class="description">
-          <p>My person website created from scratch.</p>
+          <p>My personal website created from scratch.</p>
         </div>
         </div>
       </div>
@@ -88,10 +88,10 @@
           <img class="thumb" src="@/assets/my-gold-animals.png" alt="" srcset="" width="376px" height="177px">
           </a>
           <div class="block-skills">
-            HTML - CSS - JavaScript - Adobe Photoshop - PrestaShop
+            HTML - CSS - JavaScript - Bootstrap - Adobe Photoshop - PrestaShop
           </div>
         <div class="description">
-          <p>Another portfolio website, but this time for pet jewelry that I created for a jeweler. This time an ecommerce backend was added.</p>
+          <p>Another portfolio website, but this time for pet jewelry, that I created for a jeweler. This time an ecommerce backend was added.</p>
         </div></div>
       </div>
     </div>
