@@ -2,9 +2,8 @@
   <div id="home">
     <div class="wrapper-desc">
         <div class="desc">Eugene Fedotov</div>
-        <div class="desc">is a <span class="uppercase subject">hacker</span></div>
-        <div class="desc">is a <span class="uppercase subject">developer</span></div>
-        <div class="desc">loves <span class="uppercase subject">anime</span></div>
+        <div class="desc"><span class="uppercase subject">hacker</span></div>
+        <div class="desc"><span class="uppercase subject">creator</span></div>
     </div>
     <video id="hero" autoplay="autoplay" loop="loop" muted="muted">
         <source src="@/assets/hero.webm" type="video/webm">
