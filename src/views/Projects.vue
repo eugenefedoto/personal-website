@@ -4,7 +4,7 @@
     <div id="personal-website" class="card-project">
       <div class="capsule">
         <div class="wrapper">
-          <a href="/">
+          <a href="/" target="__blank">
           <img class="thumb" src="@/assets/personal-website.png" alt="" srcset="" width="358px"  height="177px">
           </a>
           <div class="block-skills">
@@ -38,7 +38,7 @@
     </div>
     <div id="bike-location-finder-v1" class="card-project">
       <div class="capsule">
-        <div class="wrapper"><a href="https://seagulltuna.neuralspaz.com/">
+        <div class="wrapper"><a href="https://seagulltuna.neuralspaz.com/" target="__blank">
           <img class="thumb" src="@/assets/bike-location-finder-v1.png" alt="" srcset="" width="373px" height="177px">
           </a>
           <div class="block-skills">
@@ -54,7 +54,7 @@
     </div>
     <div id="bike-location-finder-v2" class="card-project">
       <div class="capsule">
-        <div class="wrapper"><a href="https://seagulltunav2.neuralspaz.com/">
+        <div class="wrapper"><a href="https://seagulltunav2.neuralspaz.com/" target="__blank">
           <img class="thumb" src="@/assets/bike-location-finder-v2.png" alt="" srcset="" width="373px" height="177px">
           </a>
           <div class="block-skills">
@@ -70,7 +70,7 @@
     </div>
     <div id="gladiator-studios" class="card-project">
       <div class="capsule">
-        <div class="wrapper"><a href="http://www.gladiator-studios.com/">
+        <div class="wrapper"><a href="http://www.gladiator-studios.com/" target="__blank">
           <img class="thumb" src="@/assets/gladiator-studios.png" alt="" srcset="" width="376px" height="177px">
           </a>
           <div class="block-skills">
@@ -84,7 +84,7 @@
 
 <div id="my-gold-animals" class="card-project">
       <div class="capsule">
-        <div class="wrapper"><a href="http://mygoldanimals.com/">
+        <div class="wrapper"><a href="http://mygoldanimals.com/" target="__blank">
           <img class="thumb" src="@/assets/my-gold-animals.png" alt="" srcset="" width="376px" height="177px">
           </a>
           <div class="block-skills">
