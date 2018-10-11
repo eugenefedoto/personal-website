@@ -50,6 +50,7 @@ export default class Home extends Vue {}
     color: #c6d4df;
     margin: 20px 10px;
     padding:30px;
+    opacity: 0.9
     }
   }
   .hero-cta{
@@ -71,11 +72,11 @@ export default class Home extends Vue {}
     border: solid #FF2643;
     overflow: visible;
     color: #FF2643;
-    // background-color: #FF2643;
     background-color:transparent;
 font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
 cursor:pointer;
 margin-top:15px;
+
   }
 }
 .center{
