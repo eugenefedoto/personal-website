@@ -52,9 +52,12 @@ body {
   .desc {
     font-size: 2em;
     color: white;
-    .uppercase {
-      text-transform: uppercase;
+    .subject{
+      font-size: 0.6em;
     }
   }
 }
+.uppercase {
+      text-transform: uppercase;
+    }
 </style>

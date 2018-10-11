@@ -101,7 +101,6 @@
 <style lang="scss" scoped>
 #projects {
   display: flex;
-  justify-content: space-evenly;
   flex-wrap: wrap;
   .card-project {
     background: #2e3138;
