@@ -1,5 +1,6 @@
 <template>
   <div id="home">
+    
     <div class="wrapper-desc">
       <div class="card-project">
       <div class="capsule">
@@ -7,7 +8,7 @@
 <div class="desc">Eugene Fedotov</div>
         <div class="desc" style="text-align:center"><span class="uppercase subject">hacker - creator</span></div>
         <div class="center">
-          <router-link to="/projects" class="uppercase hero-cta">learn about Eugene</router-link></div>
+          <router-link to="/projects" class="uppercase hero-cta">learn more</router-link></div>
         </div>
       </div>
     </div>
@@ -46,16 +47,14 @@ export default class Home extends Vue {}
     box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.7);
     border: 1px solid #383b42;
     border-radius: 15px;
-    opacity: 1;
     color: #c6d4df;
     margin: 20px 10px;
     padding:30px;
-    opacity: 0.9
+    opacity: 0.9;
     }
   }
   .hero-cta{
-        font-size: 24px;
-            padding: 1em 1.5em 1em 2em;
+            padding: 0.5em;
     letter-spacing: 1.9px;
     font-weight: 400;
     min-width: 112px;
@@ -63,9 +62,9 @@ export default class Home extends Vue {}
     white-space: normal;
     display: inline-block;
     text-decoration: none;
-    line-height: 1em;
+ 
     vertical-align: middle;
-    font-weight: 400;
+
     border-radius: 2px;
     user-select: none;
     text-align: center;
@@ -81,5 +80,20 @@ margin-top:15px;
 }
 .center{
   text-align: center;
+  display:flex;
+  justify-content: space-evenly;
 }
+.desc{
+  text-align: center;
+}
+.subject{
+    display:inline-block;
+    line-height: 1.2em;
+  }
+  .github-avatar{
+    width:100px;
+    height: 100%;
+    border-radius: 30px;
+  }
+
 </style>

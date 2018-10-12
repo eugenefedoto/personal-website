@@ -1,4 +1,4 @@
-# portfolio-website
+# personal-website
 
 Deployment of https://github.com/eugenefedoto/eugenefedoto.github.io.
 

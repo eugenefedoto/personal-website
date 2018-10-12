@@ -5,7 +5,7 @@
       <div class="capsule">
         <div class="wrapper">
           <a href="/" target="__blank">
-          <img class="thumb" src="@/assets/personal-website.png" alt="" srcset="" width="358px"  height="177px">
+          <img class="thumb" src="@/assets/personal-website.png" alt="" srcset="">
           </a>
           <div class="block-skills">
             Vue - Flexbox - Webpack - SCSS - TypeScript
@@ -22,7 +22,7 @@
     <div id="love-you-forever" class="card-project">
       <div class="capsule">
         <div class="wrapper">
-          <img class="thumb" src="@/assets/love-you-forever.png" alt="" srcset="" width="376px" height="177px">
+          <img class="thumb" src="@/assets/love-you-forever.png" alt="" srcset="">
           <div class="block-skills">
             Vue - CSS Grid - Laravel - Docker - Apache
           </div>
@@ -39,7 +39,7 @@
     <div id="bike-location-finder-v1" class="card-project">
       <div class="capsule">
         <div class="wrapper"><a href="https://seagulltuna.neuralspaz.com/" target="__blank">
-          <img class="thumb" src="@/assets/bike-location-finder-v1.png" alt="" srcset="" width="373px" height="177px">
+          <img class="thumb" src="@/assets/bike-location-finder-v1.png" alt="" srcset="">
           </a>
           <div class="block-skills">
             Vue - Semantic UI - Node.js - MongoDB
@@ -55,7 +55,7 @@
     <div id="bike-location-finder-v2" class="card-project">
       <div class="capsule">
         <div class="wrapper"><a href="https://seagulltunav2.neuralspaz.com/" target="__blank">
-          <img class="thumb" src="@/assets/bike-location-finder-v2.png" alt="" srcset="" width="373px" height="177px">
+          <img class="thumb" src="@/assets/bike-location-finder-v2.png" alt="" srcset="" >
           </a>
           <div class="block-skills">
             Vue - Vuetify - Go - SQLite - Mapillary
@@ -71,7 +71,7 @@
     <div id="gladiator-studios" class="card-project">
       <div class="capsule">
         <div class="wrapper"><a href="http://www.gladiator-studios.com/" target="__blank">
-          <img class="thumb" src="@/assets/gladiator-studios.png" alt="" srcset="" width="376px" height="177px">
+          <img class="thumb" src="@/assets/gladiator-studios.png" alt="" srcset="">
           </a>
           <div class="block-skills">
             HTML - CSS - JavaScript - Adobe Photoshop
@@ -85,7 +85,7 @@
 <div id="my-gold-animals" class="card-project">
       <div class="capsule">
         <div class="wrapper"><a href="http://mygoldanimals.com/" target="__blank">
-          <img class="thumb" src="@/assets/my-gold-animals.png" alt="" srcset="" width="376px" height="177px">
+          <img class="thumb" src="@/assets/my-gold-animals.png" alt="" srcset="">
           </a>
           <div class="block-skills">
             HTML - CSS - JavaScript - Bootstrap - Adobe Photoshop - PrestaShop
@@ -100,8 +100,8 @@
 
 <style lang="scss" scoped>
 #projects {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 400px);
   .card-project {
     background: #2e3138;
     box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.7);
@@ -136,18 +136,7 @@
       }
     }
   }
-  #personal-website {
-    max-width: 358px;
-  }
-  #love-you-forever,
-  #gladiator-studios,
-  #my-gold-animals {
-    max-width: 376px;
-  }
-  #bike-location-finder-v1,
-  #bike-location-finder-v2 {
-    max-width: 373px;
-  }
+
 }
 .links {
   max-height: 40px;
