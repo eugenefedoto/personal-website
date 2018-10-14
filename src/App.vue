@@ -2,35 +2,37 @@
   <div id="app">
     <nav class="site-nav site-nav--home" :class="{'is-open-accordion': isOpenAccordion}">
       <div class="section-contained-narrow site-nav__container">
-      <div class="site-nav__main">
-        <div class="site-nav__menu-item visible-md" v-on:click="openAccordion">
-          <div class="site-nav__block">
-            <button class="site-nav-hamburger" type="button">
-              <span class="site-nav-hamburger___inner"></span>
+        <div class="site-nav__main">
+          <div class="site-nav__menu-item visible-md" v-on:click="openAccordion">
+            <div class="site-nav__block">
+              <button class="site-nav-hamburger" type="button">
+                <span class="site-nav-hamburger___inner"></span>
               </button>
+            </div>
           </div>
-        </div>
-        <div class="site-nav__logo">
-          <router-link to="/" class="site-nav__link nav-link-underline">
-          ef_
-          </router-link>
+          <div class="site-nav__logo">
+            <router-link to="/" class="site-nav__link nav-link-underline">
+              ef_
+            </router-link>
           </div>
-        <div class="site-nav-accordion">
-              <div class="site-nav__menu-item">
-              <router-link to="/projects" class="site-nav__link nav-link-underline" v-on:click.native = "isOpenAccordion = false">
+          <div class="site-nav-accordion">
+            <div class="site-nav__menu-item">
+              <router-link to="/projects" class="site-nav__link nav-link-underline" v-on:click.native="isOpenAccordion = false">
                 <div class="site-nav__block">
                   <div class="site-nav-item__name">Projects</div>
-                  </div></router-link></div>
-                      </div>
-      </div>
+                </div>
+              </router-link>
+            </div>
+          </div>
+        </div>
       </div>
     </nav>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue';
+<script lang='ts'>
+import Vue from "vue";
 export default Vue.extend({
   data() {
     return {
@@ -42,9 +44,6 @@ export default Vue.extend({
       this.isOpenAccordion = !this.isOpenAccordion;
     },
   },
-  created(){
-    
-  }
 });
 </script>
 

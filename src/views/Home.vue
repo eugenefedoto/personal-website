@@ -1,28 +1,29 @@
 <template>
   <div id="home">
-    
+
     <div class="wrapper-desc">
       <div class="card-project">
-      <div class="capsule">
-        <div class="wrapper">
-<div class="desc">Eugene Fedotov</div>
-        <div class="desc" style="text-align:center"><span class="uppercase subject">hacker - creator</span></div>
-        <div class="center">
-          <router-link to="/projects" class="uppercase hero-cta">learn more</router-link></div>
+        <div class="capsule">
+          <div class="wrapper">
+            <div class="desc">Eugene Fedotov</div>
+            <div class="desc" style="text-align:center"><span class="uppercase subject">hacker - creator</span></div>
+            <div class="center">
+              <router-link to="/projects" class="uppercase hero-cta">learn more</router-link>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-        
+
     </div>
     <video id="hero" autoplay="autoplay" loop="loop" muted="muted">
-        <source src="@/assets/hero.webm" type="video/webm">
-        <source src="@/assets/hero.mp4" type="video/mp4">
+      <source src="@/assets/hero.webm" type="video/webm">
+      <source src="@/assets/hero.mp4" type="video/mp4">
     </video>
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
+import { Vue } from "vue-property-decorator";
 
 export default class Home extends Vue {}
 </script>
@@ -40,21 +41,21 @@ export default class Home extends Vue {}
   .wrapper-desc {
     z-index: 1;
     position: absolute;
-    top:100px;
+    top: 100px;
     font-size: 2rem;
     .card-project {
-    background: #2e3138;
-    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.7);
-    border: 1px solid #383b42;
-    border-radius: 15px;
-    color: #c6d4df;
-    margin: 20px 10px;
-    padding:30px;
-    opacity: 0.9;
+      background: #2e3138;
+      box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.7);
+      border: 1px solid #383b42;
+      border-radius: 15px;
+      color: #c6d4df;
+      margin: 20px 10px;
+      padding: 30px;
+      opacity: 0.9;
     }
   }
-  .hero-cta{
-            padding: 0.5em;
+  .hero-cta {
+    padding: 0.5em;
     letter-spacing: 1.9px;
     font-weight: 400;
     min-width: 112px;
@@ -62,38 +63,36 @@ export default class Home extends Vue {}
     white-space: normal;
     display: inline-block;
     text-decoration: none;
- 
+
     vertical-align: middle;
 
     border-radius: 2px;
     user-select: none;
     text-align: center;
-    border: solid #FF2643;
+    border: solid #ff2643;
     overflow: visible;
-    color: #FF2643;
-    background-color:transparent;
-font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
-cursor:pointer;
-margin-top:15px;
-
+    color: #ff2643;
+    background-color: transparent;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    cursor: pointer;
+    margin-top: 15px;
   }
 }
-.center{
+.center {
   text-align: center;
-  display:flex;
+  display: flex;
   justify-content: space-evenly;
 }
-.desc{
+.desc {
   text-align: center;
 }
-.subject{
-    display:inline-block;
-    line-height: 1.2em;
-  }
-  .github-avatar{
-    width:100px;
-    height: 100%;
-    border-radius: 30px;
-  }
-
+.subject {
+  display: inline-block;
+  line-height: 1.2em;
+}
+.github-avatar {
+  width: 100px;
+  height: 100%;
+  border-radius: 30px;
+}
 </style>

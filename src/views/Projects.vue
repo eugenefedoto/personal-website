@@ -109,7 +109,7 @@
     opacity: 1;
     color: #c6d4df;
     margin: 20px 10px;
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     .capsule {
       a {
@@ -136,12 +136,9 @@
       }
     }
   }
-
 }
 .links {
   max-height: 40px;
   align-self: flex-end;
-  
 }
 </style>
-
