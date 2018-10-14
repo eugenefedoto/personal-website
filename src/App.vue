@@ -137,7 +137,7 @@ body {
   margin-left: 5px;
   margin-right: 5px;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .site-nav__block {
     font-size: 14px;
   }
@@ -192,7 +192,7 @@ button {
   width: 110px;
   transition: all 200ms ease-in-out;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 320px) {
   .site-nav-accordion {
     position: absolute;
     top: 50px;
@@ -297,7 +297,7 @@ button {
 html {
   overflow-y: scroll;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 320px) {
   .site-nav-accordion .site-nav__link {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -306,9 +306,12 @@ html {
     border-bottom: 1px solid #353a3d;
   }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .is-open-accordion .site-nav-accordion {
     max-height: 500px;
   }
+}
+.site-nav-accordion {
+  z-index: 2;
 }
 </style>

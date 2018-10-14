@@ -1,24 +1,24 @@
 <template>
   <div id="home">
+    <div class="header">
 
-    <div class="wrapper-desc">
-      <div class="card-project">
-        <div class="capsule">
-          <div class="wrapper">
-            <div class="desc">Eugene Fedotov</div>
-            <div class="desc" style="text-align:center"><span class="uppercase subject">hacker - creator</span></div>
-            <div class="center">
-              <router-link to="/projects" class="uppercase hero-cta">learn more</router-link>
-            </div>
-          </div>
+      <video id="hero" autoplay="autoplay" loop="loop" muted="muted">
+        <source src="@/assets/hero.webm" type="video/webm">
+        <source src="@/assets/hero.mp4" type="video/mp4">
+      </video>
+      <div class="wrapper-desc">
+        <div class="desc">Eugene Fedotov</div>
+        <div class="desc" style="text-align:center"><span class="uppercase subject">hacker - creator</span></div>
+        <div class="center">
+          <router-link to="/projects" class="uppercase hero-cta">learn more</router-link>
         </div>
       </div>
-
     </div>
-    <video id="hero" autoplay="autoplay" loop="loop" muted="muted">
-      <source src="@/assets/hero.webm" type="video/webm">
-      <source src="@/assets/hero.mp4" type="video/mp4">
-    </video>
+    <div class="about-container">
+      <div class="avatar-container">
+        <img class="avatar" src="https://github.com/eugenefedoto.png" alt="">
+      </div>
+    </div>
   </div>
 </template>
 
@@ -29,59 +29,60 @@ export default class Home extends Vue {}
 </script>
 
 <style lang="scss" scoped>
-#home {
-  #hero {
-    position: fixed;
-    top: -30vh;
-    right: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
-  }
-  .wrapper-desc {
-    z-index: 1;
-    position: absolute;
-    top: 100px;
-    font-size: 2rem;
-    .card-project {
-      background: #2e3138;
-      box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.7);
-      border: 1px solid #383b42;
-      border-radius: 15px;
-      color: #c6d4df;
-      margin: 20px 10px;
-      padding: 30px;
-      opacity: 0.9;
-    }
-  }
-  .hero-cta {
-    padding: 0.5em;
-    letter-spacing: 1.9px;
-    font-weight: 400;
-    min-width: 112px;
-    outline: 0;
-    white-space: normal;
-    display: inline-block;
-    text-decoration: none;
-
-    vertical-align: middle;
-
-    border-radius: 2px;
-    user-select: none;
-    text-align: center;
-    border: solid #ff2643;
-    overflow: visible;
-    color: #ff2643;
-    background-color: transparent;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    cursor: pointer;
-    margin-top: 15px;
+#hero {
+  width: 100%;
+  position: relative;
+  z-index: -1;
+}
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  .avatar {
+    border-radius: 50%;
+    height: 200px;
   }
 }
+.wrapper-desc {
+  z-index: 1;
+  position: absolute;
+  top: 10vh;
+  font-size: 2rem;
+  background: #2e3138;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.7);
+  border: 1px solid #383b42;
+  border-radius: 15px;
+  color: #c6d4df;
+  margin: 1rem;
+  padding: 1rem;
+  opacity: 0.9;
+  top: 10vh;
+}
+.hero-cta {
+  padding: 0.5em;
+  letter-spacing: 1.9px;
+  font-weight: 400;
+  outline: 0;
+  white-space: normal;
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: middle;
+
+  border-radius: 2px;
+  user-select: none;
+  text-align: center;
+  border: solid #ff2643;
+  overflow: visible;
+  color: #ff2643;
+  background-color: transparent;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  cursor: pointer;
+}
+
 .center {
   text-align: center;
   display: flex;
   justify-content: space-evenly;
+  margin: 10px;
 }
 .desc {
   text-align: center;
@@ -90,9 +91,35 @@ export default class Home extends Vue {}
   display: inline-block;
   line-height: 1.2em;
 }
-.github-avatar {
-  width: 100px;
-  height: 100%;
-  border-radius: 30px;
+@media only screen and (max-width: 768px) {
+  .wrapper-desc {
+    font-size: 2rem;
+    // padding: 0.5rem;
+  }
+  .header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  video {
+  }
+}
+@media only screen and (max-width: 320px) {
+  .wrapper-desc {
+    font-size: 1rem;
+    margin: 0;
+    .hero-cta {
+      display: none;
+    }
+  }
+  .header {
+    align-items: center;
+  }
+  .avatar-container {
+    .avatar {
+      height: 100px;
+      z-index: 1;
+    }
+  }
 }
 </style>
