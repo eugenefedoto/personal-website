@@ -5,19 +5,19 @@
       <div class="capsule">
         <div class="wrapper">
           <a href="/" target="__blank">
-          <img class="thumb" src="@/assets/personal-website.png" alt="" srcset="">
+            <img class="thumb" src="@/assets/personal-website.png" alt="" srcset="">
           </a>
           <div class="block-skills">
             Vue - Flexbox - Webpack - SCSS - TypeScript
           </div>
-        <div class="description">
-          <p>My personal website created from scratch.</p>
-        </div>
+          <div class="description">
+            <p>My personal website created from scratch.</p>
+          </div>
         </div>
       </div>
       <div class="links">
-          <a target="_blank" href="https://github.com/eugenefedoto/personal-website"><img src="@/assets/Octocat.png" alt="" width="40" height="33"></a>
-        </div>
+        <a target="_blank" href="https://github.com/eugenefedoto/personal-website"><img src="@/assets/Octocat.png" alt="" width="40" height="33"></a>
+      </div>
     </div>
     <div id="love-you-forever" class="card-project">
       <div class="capsule">
@@ -26,73 +26,77 @@
           <div class="block-skills">
             Vue - CSS Grid - Laravel - Docker - Apache
           </div>
-        <div class="description">
-          <p>A creative playground for developing my skills - based on the hit game and anime Amagami SS.</p>
-        </div>
+          <div class="description">
+            <p>A creative playground for developing my skills - based on the hit game and anime Amagami SS.</p>
+          </div>
 
         </div>
       </div>
       <div class="links">
-          <a target="_blank" href="https://github.com/eugenefedoto/LoveYouForever"><img src="@/assets/Octocat.png" alt="" width="40" height="33"></a>
-        </div>
+        <a target="_blank" href="https://github.com/eugenefedoto/LoveYouForever"><img src="@/assets/Octocat.png" alt="" width="40" height="33"></a>
+      </div>
     </div>
     <div id="bike-location-finder-v1" class="card-project">
       <div class="capsule">
         <div class="wrapper"><a href="https://seagulltuna.neuralspaz.com/" target="__blank">
-          <img class="thumb" src="@/assets/bike-location-finder-v1.png" alt="" srcset="">
+            <img class="thumb" src="@/assets/bike-location-finder-v1.png" alt="" srcset="">
           </a>
           <div class="block-skills">
             Vue - Semantic UI - Node.js - MongoDB
           </div>
-        <div class="description">
-          <p>Google Maps for bikes, with over 400k interactive points. A first place, team project for the https://fullstack.network/ contest.</p>
-        </div></div>
+          <div class="description">
+            <p>Google Maps for bikes, with over 400k interactive points. A first place, team project for the https://fullstack.network/ contest.</p>
+          </div>
+        </div>
       </div>
       <div class="links">
-          <a target="_blank" href="https://github.com/getbikesharedone/seagulltuna"><img src="@/assets/Octocat.png" alt="" width="40" height="33"></a>
-        </div>
+        <a target="_blank" href="https://github.com/getbikesharedone/seagulltuna"><img src="@/assets/Octocat.png" alt="" width="40" height="33"></a>
+      </div>
     </div>
     <div id="bike-location-finder-v2" class="card-project">
       <div class="capsule">
         <div class="wrapper"><a href="https://seagulltunav2.neuralspaz.com/" target="__blank">
-          <img class="thumb" src="@/assets/bike-location-finder-v2.png" alt="" srcset="" >
+            <img class="thumb" src="@/assets/bike-location-finder-v2.png" alt="" srcset="">
           </a>
           <div class="block-skills">
             Vue - Vuetify - Go - SQLite - Mapillary
           </div>
-        <div class="description">
-          <p>Version 2 of the Bike Network Location Finder. I redesigned the entire UI to have cleaner code, be modular, and use the Vuetify library.</p>
-        </div></div>
+          <div class="description">
+            <p>Version 2 of the Bike Network Location Finder. I redesigned the entire UI to have cleaner code, be modular, and use the Vuetify library.</p>
+          </div>
+        </div>
       </div>
       <div class="links">
-          <a target="_blank" href="https://github.com/getbikesharedone/seagulltunav2"><img src="@/assets/Octocat.png" alt="" width="40" height="33"></a>
-        </div>
+        <a target="_blank" href="https://github.com/getbikesharedone/seagulltunav2"><img src="@/assets/Octocat.png" alt="" width="40" height="33"></a>
+      </div>
     </div>
     <div id="gladiator-studios" class="card-project">
       <div class="capsule">
         <div class="wrapper"><a href="http://www.gladiator-studios.com/" target="__blank">
-          <img class="thumb" src="@/assets/gladiator-studios.png" alt="" srcset="">
+            <img class="thumb" src="@/assets/gladiator-studios.png" alt="" srcset="">
           </a>
           <div class="block-skills">
             HTML - CSS - JavaScript - Adobe Photoshop
           </div>
-        <div class="description">
-          <p>A portfolio website, involving Gladiator jewelry, that I created for a jeweler.</p>
-        </div></div>
+          <div class="description">
+            <p>A portfolio website, involving Gladiator jewelry, that I created for a jeweler.</p>
+          </div>
+        </div>
       </div>
     </div>
 
-<div id="my-gold-animals" class="card-project">
+    <div id="my-gold-animals" class="card-project">
       <div class="capsule">
         <div class="wrapper"><a href="http://mygoldanimals.com/" target="__blank">
-          <img class="thumb" src="@/assets/my-gold-animals.png" alt="" srcset="">
+            <img class="thumb" src="@/assets/my-gold-animals.png" alt="" srcset="">
           </a>
           <div class="block-skills">
             HTML - CSS - JavaScript - Bootstrap - Adobe Photoshop - PrestaShop
           </div>
-        <div class="description">
-          <p>Another portfolio website, but this time for pet jewelry, that I created for a jeweler. This time an ecommerce backend was added.</p>
-        </div></div>
+          <div class="description">
+            <p>Another portfolio website, but this time for pet jewelry, that I created for a jeweler. This time an ecommerce backend was added.</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -140,5 +144,8 @@
 .links {
   max-height: 40px;
   align-self: flex-end;
+}
+#projects {
+  background: #2e3138;
 }
 </style>

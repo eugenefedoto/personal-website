@@ -50,6 +50,7 @@ export default Vue.extend({
 
 <style lang="scss">
 @import "~normalize.css";
+
 * {
   -webkit-font-smoothing: antialiased;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -59,7 +60,7 @@ export default Vue.extend({
 }
 
 body {
-  background: #2e3138;
+  background: black;
 }
 
 .wrapper-nav {
@@ -97,6 +98,11 @@ body {
   -webkit-text-fill-color: transparent;
   font-size: 24px;
 }
+.site-nav__logo {
+  a {
+    margin-left: 15px;
+  }
+}
 .desc {
   font-size: 2em;
   color: white;
@@ -133,10 +139,7 @@ body {
   align-items: center;
   height: 47px;
 }
-.site-nav__menu-item {
-  margin-left: 5px;
-  margin-right: 5px;
-}
+
 @media only screen and (max-width: 768px) {
   .site-nav__block {
     font-size: 14px;
@@ -153,13 +156,12 @@ body {
   position: relative;
 }
 .site-nav-hamburger {
-  padding: 5px 0;
+  margin: 5px 5px;
   display: inline-block;
   position: relative;
   cursor: pointer;
   transition: opacity, filter 150ms linear;
   width: 20px;
-  margin-right: 5px;
 }
 button {
   background: none;
@@ -192,17 +194,8 @@ button {
   width: 110px;
   transition: all 200ms ease-in-out;
 }
-@media only screen and (max-width: 320px) {
-  .site-nav-accordion {
-    position: absolute;
-    top: 50px;
-    left: 0;
-    right: 0;
-    width: 100%;
-    overflow-y: hidden;
-    max-height: 0;
-    transition: all 400ms ease-in-out;
-  }
+
+@media only screen and (max-width: 426px) {
   .is-open-accordion .site-nav-accordion {
     max-height: 500px;
   }
@@ -242,7 +235,7 @@ button {
   height: 20px;
   width: 110px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .site-nav-accordion {
     display: flex;
     flex-direction: row;
@@ -250,31 +243,25 @@ button {
     height: 47px;
   }
 }
-.site-nav__menu-item {
-  margin-left: 5px;
-  margin-right: 5px;
-}
+
 @media only screen and (min-width: 768px) {
   .site-nav--marketing .site-nav__link {
     color: #54aeff;
   }
 }
-.nav-link-underline {
-  padding-left: 10px;
-  padding-right: 10px;
-}
+
 .site-nav__link {
   position: relative;
   text-align: center;
   display: block;
   transition: all 250ms ease-in-out;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 426px) {
   .visible-md {
     display: none !important;
   }
 }
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 961px) {
   .site-nav__container {
     padding: 0;
   }
@@ -285,7 +272,7 @@ button {
   justify-content: space-between;
 }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1026px) {
   .section-contained-narrow {
     max-width: 960px;
   }
@@ -297,7 +284,7 @@ button {
 html {
   overflow-y: scroll;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 426px) {
   .site-nav-accordion .site-nav__link {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -305,8 +292,18 @@ html {
     color: #c2c9d4;
     border-bottom: 1px solid #353a3d;
   }
+  .site-nav-accordion {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    overflow-y: hidden;
+    max-height: 0;
+    transition: all 400ms ease-in-out;
+  }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 769px) {
   .is-open-accordion .site-nav-accordion {
     max-height: 500px;
   }

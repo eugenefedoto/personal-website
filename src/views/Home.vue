@@ -1,14 +1,13 @@
 <template>
   <div id="home">
     <div class="header">
-
       <video id="hero" autoplay="autoplay" loop="loop" muted="muted">
         <source src="@/assets/hero.webm" type="video/webm">
         <source src="@/assets/hero.mp4" type="video/mp4">
       </video>
       <div class="wrapper-desc">
         <div class="desc">Eugene Fedotov</div>
-        <div class="desc" style="text-align:center"><span class="uppercase subject">hacker - creator</span></div>
+        <div class="desc"><span class="uppercase subject">hacker - creator</span></div>
         <div class="center">
           <router-link to="/projects" class="uppercase hero-cta">learn more</router-link>
         </div>
@@ -37,15 +36,19 @@ export default class Home extends Vue {}
 .avatar-container {
   display: flex;
   justify-content: center;
+  text-align: center;
   .avatar {
     border-radius: 50%;
     height: 200px;
   }
 }
 .wrapper-desc {
+  display: flex;
+  justify-content: center;
+  max-width: 500px;
+  flex-wrap: wrap;
   z-index: 1;
   position: absolute;
-  top: 10vh;
   font-size: 2rem;
   background: #2e3138;
   box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.7);
@@ -84,30 +87,23 @@ export default class Home extends Vue {}
   justify-content: space-evenly;
   margin: 10px;
 }
-.desc {
-  text-align: center;
-}
+// .desc {
+//   text-align: center;
+// }
 .subject {
   display: inline-block;
   line-height: 1.2em;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 769px) {
   .wrapper-desc {
     font-size: 2rem;
-    // padding: 0.5rem;
-  }
-  .header {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-  video {
   }
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 426px) {
   .wrapper-desc {
     font-size: 1rem;
     margin: 0;
+    border-radius: unset;
     .hero-cta {
       display: none;
     }
