@@ -185,6 +185,7 @@ button {
   display: block;
 }
 .site-nav-hamburger___inner {
+  display: block;
   top: 50%;
   margin-top: -1px;
   transition: 100ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
@@ -294,7 +295,7 @@ html {
   }
   .site-nav-accordion {
     position: absolute;
-    top: 50px;
+    top: 45px;
     left: 0;
     right: 0;
     width: 100%;
@@ -310,5 +311,62 @@ html {
 }
 .site-nav-accordion {
   z-index: 2;
+}
+.is-open-accordion .site-nav-hamburger___inner {
+  transform: rotate(45deg);
+  transition: 140ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.site-nav-hamburger___inner:before {
+  top: -7px;
+  transition: top 100ms 140ms ease, opacity 100ms ease;
+}
+.site-nav-hamburger___inner:after {
+  bottom: -7px;
+  transition: bottom 100ms 140ms ease,
+    transform 100ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.is-open-accordion .site-nav-hamburger___inner:before {
+  top: 0;
+  opacity: 0;
+  transition: top 100ms ease, opacity 100ms 140ms ease;
+}
+.is-open-accordion .site-nav-hamburger___inner:after {
+  bottom: 0;
+  transform: rotate(-90deg);
+  transition: bottom 100ms ease,
+    transform 100ms 140ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.site-nav-hamburger:hover {
+  opacity: 0.7;
+}
+
+.site-nav-hamburger:hover {
+  opacity: 0.7;
+}
+.site-nav-hamburger {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  transition: opacity, filter 150ms linear;
+  width: 20px;
+  margin-right: 5px;
+}
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+}
+a,
+button {
+  text-decoration: none;
+  transition: all 250ms ease-in-out;
+  color: #2e9fff;
+}
+button {
+  border-radius: 0;
+}
+button:focus {
+  outline: none;
 }
 </style>
