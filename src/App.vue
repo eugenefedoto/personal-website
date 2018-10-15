@@ -369,4 +369,9 @@ button {
 button:focus {
   outline: none;
 }
+nav {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
 </style>
