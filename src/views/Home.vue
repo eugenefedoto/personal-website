@@ -13,9 +13,39 @@
         </div>
       </div>
     </div>
-    <div class="about-container">
-      <div class="avatar-container">
-        <img class="avatar" src="https://github.com/eugenefedoto.png" alt="">
+    <div class="content">
+      <div class="container">
+        <div class="feature" style="display:flex;  flex-wrap:wrap;">
+          <div class="avatar-container">
+            <img class="avatar" src="https://github.com/eugenefedoto.png" alt="">
+          </div>
+
+          <ul>
+            Hobbies
+            <li>hacking</li>
+            <li>programming</li>
+            <li>anime</li>
+            <li>gaming</li>
+          </ul>
+          <ul>
+            Past Roles
+            <li>Lead frontend development.</li>
+            <li>Developed Node.js services.</li>
+            <li>Converted web designs.</li>
+          </ul>
+
+        </div>
+
+        <!-- <div class="feature">
+          <h2>My Story</h2>
+          <p>I became enthralled with the world of hardware and software ever since I got my hands on a Sega Genesis.
+            Trying to understand every detail behind the scenes became a fascination. Entering cheat codes in order to change the machine code
+            was a beautiful ordeal for me. As I got further into games, I became increasingly more interested in manipulating the bit world.
+            It started out with programming mathematical functions on my TI-83 before ending up spending my weekends trying out a new Linux flavor on the high school
+            weekends. These days, I spend my time being obsessed over learning and improving my skills in whatever area related to computers I'm focusing on.
+            The number one goal is to have fun with what I'm doing.
+          </p>
+        </div> -->
       </div>
     </div>
   </div>
@@ -28,18 +58,28 @@ export default class Home extends Vue {}
 </script>
 
 <style lang="scss" scoped>
+.feature {
+  color: #7f8fad;
+  font-size: 1.5rem;
+  li,
+  p {
+    color: #596985;
+  }
+  p {
+    font-size: 0.9em;
+  }
+}
 #hero {
   width: 100%;
   position: relative;
   z-index: -1;
 }
-.avatar-container {
-  display: flex;
-  justify-content: center;
-  text-align: center;
+.container {
+  // display: flex;
+  // text-align: center;
   .avatar {
     border-radius: 50%;
-    height: 200px;
+    height: 100px;
   }
 }
 .wrapper-desc {
@@ -111,10 +151,26 @@ export default class Home extends Vue {}
   .header {
     align-items: center;
   }
-  .avatar-container {
+  .container {
     .avatar {
       height: 100px;
       z-index: 1;
+    }
+  }
+}
+.feature {
+  div {
+    display: flex;
+    flex: 0 0 100%;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 767px) {
+  .feature {
+    display: flex;
+    justify-content: center;
+    .avatar-container {
+      flex-basis: auto;
     }
   }
 }
