@@ -9,13 +9,13 @@
         <div class="desc">Eugene Fedotov</div>
         <div class="desc"><span class="uppercase subject">hacker - creator</span></div>
         <div class="center">
-          <a href="#avatar-container" class="uppercase hero-cta">learn more</a>
+          <router-link to="#about" class="uppercase hero-cta">learn more</router-link>
         </div>
       </div>
     </div>
     <div class="content">
       <div class="container">
-        <div class="feature" style="display:flex;  flex-wrap:wrap;">
+        <div id="about" class="feature" style="display:flex;  flex-wrap:wrap;">
           <div id="avatar-container">
             <img class="avatar" src="https://github.com/eugenefedoto.png" alt="">
           </div>
