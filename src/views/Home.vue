@@ -9,14 +9,14 @@
         <div class="desc">Eugene Fedotov</div>
         <div class="desc"><span class="uppercase subject">hacker - creator</span></div>
         <div class="center">
-          <router-link to="/projects" class="uppercase hero-cta">learn more</router-link>
+          <a href="#avatar-container" class="uppercase hero-cta">learn more</a>
         </div>
       </div>
     </div>
     <div class="content">
       <div class="container">
         <div class="feature" style="display:flex;  flex-wrap:wrap;">
-          <div class="avatar-container">
+          <div id="avatar-container">
             <img class="avatar" src="https://github.com/eugenefedoto.png" alt="">
           </div>
 
@@ -36,16 +36,18 @@
 
         </div>
 
-        <!-- <div class="feature">
+        <div class="feature story">
           <h2>My Story</h2>
           <p>I became enthralled with the world of hardware and software ever since I got my hands on a Sega Genesis.
             Trying to understand every detail behind the scenes became a fascination. Entering cheat codes in order to change the machine code
             was a beautiful ordeal for me. As I got further into games, I became increasingly more interested in manipulating the bit world.
+          </p>
+          <p>
             It started out with programming mathematical functions on my TI-83 before ending up spending my weekends trying out a new Linux flavor on the high school
             weekends. These days, I spend my time being obsessed over learning and improving my skills in whatever area related to computers I'm focusing on.
             The number one goal is to have fun with what I'm doing.
           </p>
-        </div> -->
+        </div>
       </div>
     </div>
   </div>
@@ -67,6 +69,17 @@ export default class Home extends Vue {}
   }
   p {
     font-size: 0.9em;
+  }
+  &.story {
+    margin: 0 1rem;
+    flex-wrap: wrap;
+    h2 {
+      flex: 0 0 100%;
+      margin: 0.5em;
+    }
+    p {
+      margin: 0.5em;
+    }
   }
 }
 #hero {
@@ -169,7 +182,7 @@ export default class Home extends Vue {}
   .feature {
     display: flex;
     justify-content: center;
-    .avatar-container {
+    #avatar-container {
       flex-basis: auto;
     }
   }
