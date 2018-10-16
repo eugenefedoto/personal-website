@@ -180,9 +180,6 @@ export default {
   }
     });
     
-  },
-  destroyed() {
-    this.so.teardown();
   }
 }
 </script>
