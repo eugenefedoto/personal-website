@@ -282,9 +282,6 @@ button {
   margin: 0 auto;
   width: 100%;
 }
-html {
-  overflow-y: scroll;
-}
 @media only screen and (max-width: 426px) {
   .site-nav-accordion .site-nav__link {
     padding-top: 15px;
@@ -373,5 +370,8 @@ nav {
   position: fixed;
   z-index: 2;
   width: 100%;
+}
+body {
+  overflow-y: scroll;
 }
 </style>

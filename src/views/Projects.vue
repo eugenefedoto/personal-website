@@ -1,120 +1,65 @@
 <template>
   <div id="projects">
+    <div class="container">
+    </div>
+    <div class="project-list-navigation">
+      <div class="project-list-wrapper">
+        <!---->
+        <div class="project-list-window">
+          <ul id="projectListBottom" class="project-list list-unstyled list-inline" style="left: 0px;">
+            <li class="active">
+              <div class="icon" :style="{ backgroundImage: 'url(' + require('@/assets/pw-quickmenu-icon.png') + ')' }"></div> <span>Personal Website</span>
+            </li>
+            <li>
+              <div class="icon" :style="{ backgroundImage: 'url(' + require('@/assets/lyf-quickmenu-icon.png') + ')' }"></div> <span>LoveYouForever</span>
+            </li>
+            <li>
+              <div class="icon" :style="{ backgroundImage: 'url(' + require('@/assets/bikev1-quickmenu-icon.png') + ')' }"></div> <span>Bike Finder</span>
+            </li>
+            <li>
+              <div class="icon" :style="{ backgroundImage: 'url(' + require('@/assets/bikev2-quickmenu-icon.png') + ')' }"></div> <span>Bike Finder 2</span>
+            </li>
+            <li>
+              <div class="icon" :style="{ backgroundImage: 'url(' + require('@/assets/gs-quickmenu-icon.png') + ')' }"></div> <span>Gladiator Studios</span>
+            </li>
+            <li>
+              <div class="icon" :style="{ backgroundImage: 'url(' + require('@/assets/mga-quickmenu-icon.png') + ')' }"></div> <span>My Gold Animals</span>
+            </li>
+          </ul>
+        </div>
 
-    <div id="personal-website" class="card-project">
-      <div class="capsule">
-        <div class="wrapper">
-          <a href="/" target="__blank">
-            <img class="thumb" src="@/assets/personal-website.png" alt="" srcset="">
-          </a>
-          <div class="block-skills">
-            Vue - Flexbox - Webpack - SCSS - TypeScript
-          </div>
-          <div class="description">
-            <p>My personal website created from scratch.</p>
-          </div>
-        </div>
       </div>
-      <div class="links">
-        <a target="_blank" href="https://github.com/eugenefedoto/personal-website"><img src="@/assets/Octocat.png" alt="" width="40" height="33"></a>
+      <div class="all-projects">
+        <div class="icon"><a class="">
+            <svg data-v-6c07c8b2="" id="icon-all-project" viewBox="0 0 36 36" width="100%" height="100%">
+              <path data-v-6c07c8b2="" d="M7.72,6h5.14a1.72,1.72,0,0,1,1.72,1.71v5.15a1.72,1.72,0,0,1-1.72,1.71H7.72A1.71,1.71,0,0,1,6,12.89V7.74A1.71,1.71,0,0,1,7.72,6Z" transform="translate(-6.01 -6.03)" class="white"></path>
+              <path data-v-6c07c8b2="" d="M21.43,6h5.15a1.72,1.72,0,0,1,1.71,1.71v5.15a1.72,1.72,0,0,1-1.71,1.71H21.43a1.72,1.72,0,0,1-1.71-1.71V7.74A1.72,1.72,0,0,1,21.43,6Z" transform="translate(-6.01 -6.03)" class="white"></path>
+              <path data-v-6c07c8b2="" d="M35.15,6h5.14A1.72,1.72,0,0,1,42,7.74v5.15a1.72,1.72,0,0,1-1.72,1.71H35.15a1.72,1.72,0,0,1-1.72-1.71V7.74A1.72,1.72,0,0,1,35.15,6Z" transform="translate(-6.01 -6.03)" class="white"></path>
+              <path data-v-6c07c8b2="" d="M7.72,19.74h5.14a1.72,1.72,0,0,1,1.72,1.72V26.6a1.71,1.71,0,0,1-1.72,1.71H7.72A1.7,1.7,0,0,1,6,26.6V21.46A1.71,1.71,0,0,1,7.72,19.74Z" transform="translate(-6.01 -6.03)" class="white"></path>
+              <path data-v-6c07c8b2="" d="M21.43,19.74h5.15a1.72,1.72,0,0,1,1.71,1.72V26.6a1.71,1.71,0,0,1-1.71,1.71H21.43a1.71,1.71,0,0,1-1.71-1.71V21.46A1.72,1.72,0,0,1,21.43,19.74Z" transform="translate(-6.01 -6.03)" class="white"></path>
+              <path data-v-6c07c8b2="" d="M35.15,19.74h5.14A1.72,1.72,0,0,1,42,21.46V26.6a1.71,1.71,0,0,1-1.72,1.71H35.15a1.71,1.71,0,0,1-1.72-1.71V21.46A1.72,1.72,0,0,1,35.15,19.74Z" transform="translate(-6.01 -6.03)" class="white"></path>
+              <path data-v-6c07c8b2="" d="M7.72,33.46h5.14a1.71,1.71,0,0,1,1.72,1.71v5.14A1.72,1.72,0,0,1,12.86,42H7.72A1.71,1.71,0,0,1,6,40.31V35.17A1.7,1.7,0,0,1,7.72,33.46Z" transform="translate(-6.01 -6.03)" class="white"></path>
+              <path data-v-6c07c8b2="" d="M21.43,33.46h5.15a1.71,1.71,0,0,1,1.71,1.71v5.14A1.72,1.72,0,0,1,26.58,42H21.43a1.72,1.72,0,0,1-1.71-1.72V35.17A1.71,1.71,0,0,1,21.43,33.46Z" transform="translate(-6.01 -6.03)" class="white"></path>
+              <path data-v-6c07c8b2="" d="M35.15,33.46h5.14A1.71,1.71,0,0,1,42,35.17v5.14A1.72,1.72,0,0,1,40.29,42H35.15a1.72,1.72,0,0,1-1.72-1.72V35.17A1.71,1.71,0,0,1,35.15,33.46Z" transform="translate(-6.01 -6.03)" class="white"></path>
+            </svg>
+            All Projects
+          </a></div>
       </div>
-    </div>
-    <div id="love-you-forever" class="card-project">
-      <div class="capsule">
-        <div class="wrapper">
-          <img class="thumb" src="@/assets/love-you-forever.png" alt="" srcset="">
-          <div class="block-skills">
-            Vue - CSS Grid - Laravel - Docker - Apache
-          </div>
-          <div class="description">
-            <p>A creative playground for developing my skills - based on the hit game and anime Amagami SS.</p>
-          </div>
 
-        </div>
-      </div>
-      <div class="links">
-        <a target="_blank" href="https://github.com/eugenefedoto/LoveYouForever"><img src="@/assets/Octocat.png" alt="" width="40" height="33"></a>
-      </div>
-    </div>
-    <div id="bike-location-finder-v1" class="card-project">
-      <div class="capsule">
-        <div class="wrapper"><a href="https://seagulltuna.neuralspaz.com/" target="__blank">
-            <img class="thumb" src="@/assets/bike-location-finder-v1.png" alt="" srcset="">
-          </a>
-          <div class="block-skills">
-            Vue - Semantic UI - Node.js - MongoDB
-          </div>
-          <div class="description">
-            <p>Google Maps for bikes, with over 400k interactive points. A first place, team project for the https://fullstack.network/ contest.</p>
-          </div>
-        </div>
-      </div>
-      <div class="links">
-        <a target="_blank" href="https://github.com/getbikesharedone/seagulltuna"><img src="@/assets/Octocat.png" alt="" width="40" height="33"></a>
-      </div>
-    </div>
-    <div id="bike-location-finder-v2" class="card-project">
-      <div class="capsule">
-        <div class="wrapper"><a href="https://seagulltunav2.neuralspaz.com/" target="__blank">
-            <img class="thumb" src="@/assets/bike-location-finder-v2.png" alt="" srcset="">
-          </a>
-          <div class="block-skills">
-            Vue - Vuetify - Go - SQLite - Mapillary
-          </div>
-          <div class="description">
-            <p>Version 2 of the Bike Network Location Finder. I redesigned the entire UI to have cleaner code, be modular, and use the Vuetify library.</p>
-          </div>
-        </div>
-      </div>
-      <div class="links">
-        <a target="_blank" href="https://github.com/getbikesharedone/seagulltunav2"><img src="@/assets/Octocat.png" alt="" width="40" height="33"></a>
-      </div>
-    </div>
-    <div id="gladiator-studios" class="card-project">
-      <div class="capsule">
-        <div class="wrapper"><a href="http://www.gladiator-studios.com/" target="__blank">
-            <img class="thumb" src="@/assets/gladiator-studios.png" alt="" srcset="">
-          </a>
-          <div class="block-skills">
-            HTML - CSS - JavaScript - Adobe Photoshop
-          </div>
-          <div class="description">
-            <p>A portfolio website, involving Gladiator jewelry, that I created for a jeweler.</p>
-          </div>
-        </div>
-      </div>
+      <div class="clearfix"></div>
     </div>
 
-    <div id="my-gold-animals" class="card-project">
-      <div class="capsule">
-        <div class="wrapper"><a href="http://mygoldanimals.com/" target="__blank">
-            <img class="thumb" src="@/assets/my-gold-animals.png" alt="" srcset="">
-          </a>
-          <div class="block-skills">
-            HTML - CSS - JavaScript - Bootstrap - Adobe Photoshop - PrestaShop
-          </div>
-          <div class="description">
-            <p>Another portfolio website, but this time for pet jewelry, that I created for a jeweler. This time an ecommerce backend was added.</p>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
-#projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 400px);
+.wrapper {
   .card-project {
     background: #2e3138;
     box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.7);
     border: 1px solid #383b42;
     opacity: 1;
     color: #c6d4df;
-    margin: 20px 10px;
-    display: flex;
-    flex-wrap: wrap;
     .capsule {
       a {
         text-decoration: none;
@@ -147,5 +92,205 @@
 }
 #projects {
   background: #2e3138;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  background: url("../assets/personal-website.png");
+  width: 100%;
+  height: 700px;
+  opacity: 0.7;
+  background-repeat: no-repeat;
+}
+#projects {
+  padding-top: 47px;
+}
+.project-list-navigation {
+  background-color: #1a1a1a;
+  position: fixed;
+  bottom: 40px;
+  transition: 0.2s;
+  height: 100px;
+  width: 100%;
+}
+.project-list-navigation .select-project-type {
+  padding-left: 60px;
+  margin-top: 15px;
+  position: absolute;
+  left: 0;
+}
+.project-list-navigation .project-list-wrapper {
+  width: 720px;
+  padding: 0 40px;
+  position: relative;
+  height: 100px;
+  margin: 0 auto;
+}
+.project-list-navigation .all-projects {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+.project-list-navigation .project-list-wrapper .project-list-window {
+  width: 800px;
+  height: 100px;
+  overflow: hidden;
+  position: absolute;
+}
+.project-list-navigation .icon-next {
+  right: 0;
+}
+.project-list-navigation .project-list-wrapper .project-list {
+  position: absolute;
+  white-space: nowrap;
+  left: 0;
+  transition: left 0.5s;
+}
+.project-list-navigation .project-list-wrapper .project-list li.active {
+  color: #fff;
+  background-color: #121212;
+}
+.project-list-navigation .project-list-wrapper .project-list li {
+  display: inline-block;
+  width: 128px;
+  cursor: pointer;
+  color: hsla(0, 0%, 100%, 0.4);
+  vertical-align: top;
+  height: 100px;
+  transition: color 0.3s;
+}
+.list-inline > li {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.project-list-navigation .project-list-wrapper .project-list li {
+  display: inline-block;
+  width: 128px;
+  cursor: pointer;
+  color: hsla(0, 0%, 100%, 0.4);
+  vertical-align: top;
+  height: 100px;
+  transition: color 0.3s;
+}
+.list-inline > li {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.project-list-navigation .project-list-wrapper .project-list .icon {
+  background-repeat: no-repeat;
+  // width: 44px;
+  height: 44px;
+  margin: 0 auto;
+  margin-top: 15px;
+  opacity: 0.3;
+}
+
+.project-list-navigation .project-list-wrapper .project-list li span {
+  white-space: pre-wrap;
+  display: block;
+  margin-top: 7px;
+  font-size: 12px;
+  line-height: 1.2em;
+  height: 28px;
+  text-align: center;
+}
+.project-list-navigation .project-list-wrapper .project-list li.active .icon {
+  opacity: 1;
+}
+.project-list-navigation .project-list-wrapper .project-list li {
+  display: inline-block;
+  width: 128px;
+  cursor: pointer;
+  color: hsla(0, 0%, 100%, 0.4);
+  vertical-align: top;
+  height: 100px;
+  transition: color 0.3s;
+}
+.project-list-navigation .project-list-wrapper .project-list {
+  position: absolute;
+  white-space: nowrap;
+  left: 0;
+  transition: left 0.5s;
+}
+.list-inline {
+  margin-left: -5px;
+}
+.list-inline,
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 7px;
+  line-height: 1.5em;
+}
+body {
+  overflow-y: hidden;
+}
+.icon {
+  background-position-x: center;
+}
+.project-list-navigation .all-projects {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+.project-list-navigation .all-projects .icon {
+  display: inline-block;
+  width: 160px;
+  text-align: center;
+}
+.project-list-navigation .all-projects a {
+  display: inline-block;
+  margin-top: 30px;
+  color: #fff;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+a,
+a:focus,
+a:hover {
+  text-decoration: none;
+}
+.project-list-navigation .all-projects a #icon-all-project {
+  width: 21px;
+  height: 21px;
+  display: block;
+  margin: 0 auto 10px;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+.project-list-navigation .all-projects a {
+  display: inline-block;
+  margin-top: 30px;
+  color: #fff;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+.white {
+  fill: white;
+}
+.project-list-navigation .project-list-wrapper .project-list li span {
+  white-space: pre-wrap;
+  display: block;
+  margin-top: 7px;
+  font-size: 12px;
+  line-height: 1.2em;
+  height: 28px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  color: #737373;
+}
+.project-list-navigation .project-list-wrapper .project-list li.active span {
+  color: white;
 }
 </style>

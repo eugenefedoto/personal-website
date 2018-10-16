@@ -9,7 +9,7 @@
         <div class="desc">Eugene Fedotov</div>
         <div class="desc"><span class="uppercase subject">hacker - creator</span></div>
         <div class="center">
-          <router-link to="#about" class="uppercase hero-cta">learn more</router-link>
+          <a href="#about" class="uppercase hero-cta">learn more</a>
         </div>
       </div>
     </div>
@@ -59,7 +59,7 @@ import { Vue } from "vue-property-decorator";
 export default class Home extends Vue {}
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .feature {
   color: #7f8fad;
   font-size: 1.5rem;
