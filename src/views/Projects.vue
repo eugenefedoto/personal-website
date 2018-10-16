@@ -31,22 +31,22 @@
         <!---->
         <div class="project-list-window">
           <ul id="projectListBottom" class="project-list list-unstyled list-inline" style="left: 0px;">
-            <li class="active">
+            <li v-bind:class="{active: active1}" v-on:click="makeActive1">
               <div class="icon" :style="{ backgroundImage: 'url(' + require('@/assets/pw-quickmenu-icon.png') + ')' }"></div> <span>Personal Website</span>
             </li>
-            <li>
+            <li v-bind:class="{active: active2}" v-on:click="makeActive2">
               <div class="icon" :style="{ backgroundImage: 'url(' + require('@/assets/lyf-quickmenu-icon.png') + ')' }"></div> <span>LoveYouForever</span>
             </li>
-            <li>
+            <li v-bind:class="{active: active3}" v-on:click="makeActive3">
               <div class="icon" :style="{ backgroundImage: 'url(' + require('@/assets/bikev1-quickmenu-icon.png') + ')' }"></div> <span>Bike Finder</span>
             </li>
-            <li>
+            <li v-bind:class="{active: active4}" v-on:click="makeActive4">
               <div class="icon" :style="{ backgroundImage: 'url(' + require('@/assets/bikev2-quickmenu-icon.png') + ')' }"></div> <span>Bike Finder 2</span>
             </li>
-            <li>
+            <li v-bind:class="{active: active5}" v-on:click="makeActive5">
               <div class="icon" :style="{ backgroundImage: 'url(' + require('@/assets/gs-quickmenu-icon.png') + ')' }"></div> <span>Gladiator Studios</span>
             </li>
-            <li>
+            <li v-bind:class="{active: active6}" v-on:click="makeActive6">
               <div class="icon" :style="{ backgroundImage: 'url(' + require('@/assets/mga-quickmenu-icon.png') + ')' }"></div> <span>My Gold Animals</span>
             </li>
           </ul>
@@ -75,6 +75,72 @@
 
   </div>
 </template>
+
+<script>
+export default {
+  data(){
+    return{
+      active1: true,
+      active2: false,
+      active3: false,
+      active4: false,
+      active5: false,
+      active6: false
+    }
+  },
+  methods: {
+    makeActive1(){
+      this.active1 = true;
+      this.active2 = false;
+      this.active3 = false;
+      this.active4 = false;
+      this.active5 = false;
+      this.active6 = false;
+    },
+    makeActive2(){
+      this.active2 = true;
+      this.active1 = false;
+      this.active3 = false;
+      this.active4 = false;
+      this.active5 = false;
+      this.active6 = false;
+    },
+    makeActive3(){
+      this.active3 = true;
+      this.active2 = false;
+      this.active1 = false;
+      this.active4 = false;
+      this.active5 = false;
+      this.active6 = false;
+    },
+    makeActive4(){
+      this.active4 = true;
+      this.active2 = false;
+      this.active3 = false;
+      this.active1 = false;
+      this.active5 = false;
+      this.active6 = false;
+    },
+    makeActive5(){
+      this.active5 = true;
+      this.active2 = false;
+      this.active3 = false;
+      this.active4 = false;
+      this.active1 = false;
+      this.active6 = false;
+    },
+    makeActive6(){
+      this.active6 = true;
+      this.active2 = false;
+      this.active3 = false;
+      this.active4 = false;
+      this.active5 = false;
+      this.active6 = false;
+    }
+  }
+}
+</script>
+
 
 <style lang="scss" scoped>
 .wrapper {
