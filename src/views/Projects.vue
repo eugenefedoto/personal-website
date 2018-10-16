@@ -1,6 +1,30 @@
 <template>
   <div id="projects">
-    <div class="container">
+    <div class="" style="padding-top:47px">
+      <picture>
+        <source srcset="@/assets/personal-website.png" media="(max-width: 768px)">
+        <img class="page active" src="@/assets/originals/personal-website.png">
+      </picture>
+      <picture>
+        <source srcset="@/assets/love-you-forever.png" media="(max-width: 768px)">
+        <img class="page active" src="@/assets/originals/love-you-forever.png">
+      </picture>
+      <picture>
+        <source srcset="@/assets/bike-location-finder-v1.png" media="(max-width: 768px)">
+        <img class="page active" src="@/assets/originals/bike-location-finder-v1.png">
+      </picture>
+      <picture>
+        <source srcset="@/assets/bike-location-finder-v2.png" media="(max-width: 768px)">
+        <img class="page active" src="@/assets/originals/bike-location-finder-v2.png">
+      </picture>
+      <picture>
+        <source srcset="@/assets/gladiator-studios.png" media="(max-width: 768px)">
+        <img class="page active" src="@/assets/originals/gladiator-studios.png">
+      </picture>
+      <picture>
+        <source srcset="@/assets/my-gold-animals.png" media="(max-width: 768px)">
+        <img class="page active" src="@/assets/originals/my-gold-animals.png">
+      </picture>
     </div>
     <div class="project-list-navigation">
       <div class="project-list-wrapper">
@@ -69,8 +93,6 @@
       }
 
       .wrapper {
-        display: flex;
-        flex-wrap: wrap;
         .description {
           font-family: "Motiva Sans", Sans-serif;
           font-weight: 300;
@@ -92,8 +114,6 @@
 }
 #projects {
   background: #2e3138;
-  display: flex;
-  justify-content: center;
 }
 .container {
   background: url("../assets/personal-website.png");
@@ -102,13 +122,10 @@
   opacity: 0.7;
   background-repeat: no-repeat;
 }
-#projects {
-  padding-top: 47px;
-}
 .project-list-navigation {
   background-color: #1a1a1a;
   position: fixed;
-  bottom: 40px;
+  bottom: 0px;
   transition: 0.2s;
   height: 100px;
   width: 100%;
@@ -133,7 +150,7 @@
   cursor: pointer;
 }
 .project-list-navigation .project-list-wrapper .project-list-window {
-  width: 800px;
+  width: 810px;
   height: 100px;
   overflow: hidden;
   position: absolute;
@@ -292,5 +309,255 @@ svg:not(:root) {
 }
 .project-list-navigation .project-list-wrapper .project-list li.active span {
   color: white;
+}
+.scroll-container {
+  width: 100%;
+  height: 100%;
+}
+@media (max-height: 980px) {
+  .fullpage-container {
+    height: 100% !important;
+    top: 0;
+  }
+}
+.fullpage-container {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+.fullpage-container {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+.fullpage-container .fullpage-wp.anim {
+  transition: 0.2s;
+}
+.fullpage-wp.anim {
+  transform: translateZ(0);
+  transition: all 0.5s ease-out 0s;
+}
+.animated {
+  opacity: 1;
+}
+.fullpage-wp {
+}
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+.page.active {
+  opacity: 1;
+  transition: all 1s;
+}
+.page {
+  background: transparent no-repeat center;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+}
+.page {
+  box-sizing: border-box;
+  display: block;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+@media (max-height: 980px) {
+  .fullpage-container .page .project-information {
+    padding-top: 80px;
+  }
+}
+.project-information,
+.launcher-information {
+  position: relative;
+  padding-top: 10px;
+  padding-left: 60px;
+}
+.project-information .logo,
+.launcher-information .logo {
+  height: 18vh;
+  display: table-cell;
+  vertical-align: middle;
+}
+a,
+a:focus,
+a:hover {
+  text-decoration: none;
+}
+a {
+  color: #737373;
+}
+a {
+  background-color: transparent;
+}
+.project-information .logo > div,
+.launcher-information .logo > div {
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left 50%;
+  width: 420px;
+  height: 18vh;
+}
+.project-information .project-info,
+.launcher-information .project-info {
+  color: #adadad;
+  font-size: 14px;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+.list-inline {
+  margin-left: -5px;
+}
+.list-inline,
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 7px;
+  line-height: 1.5em;
+}
+.project-information .project-desc,
+.launcher-information .project-desc {
+  color: hsla(0, 0%, 100%, 0.75);
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.85);
+  font-size: 16px;
+  width: 550px;
+}
+p {
+  margin: 0 0 7px;
+  line-height: 1.5em;
+}
+.project-information .learn-more,
+.launcher-information .learn-more {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: hsla(0, 0%, 100%, 0.85);
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.85);
+  margin-top: 30px;
+  display: inline-block;
+}
+a,
+a:focus,
+a:hover {
+  text-decoration: none;
+}
+a {
+  color: #737373;
+}
+
+a {
+  background-color: transparent;
+}
+.list-inline > li {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+p {
+  margin: 0 0 7px;
+  line-height: 1.5em;
+}
+.project-information .project-info,
+.launcher-information .project-info {
+  color: #adadad;
+  font-size: 14px;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+.project-information .project-info span,
+.launcher-information .project-info span {
+  color: #fff;
+  margin-left: 5px;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.85);
+  font-size: 16px;
+  width: 550px;
+}
+@media (max-width: 1024px) {
+  .fullpage-container .fullpage-wp {
+    transform: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .page {
+    // height: 250px !important;
+  }
+}
+@media (max-width: 768px) {
+  .page {
+  }
+}
+@media (max-width: 1024px) {
+  .page {
+    top: 0;
+    opacity: 1;
+  }
+}
+@media (max-height: 980px) {
+  .fullpage-container .page .project-information {
+    padding-top: 80px;
+  }
+}
+@media (max-width: 768px) {
+  .page .project-information {
+    padding-top: 0 !important;
+  }
+  .fullpage-wp {
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  .project-list-navigation {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  .page .project-information {
+    text-align: center;
+    padding-left: 0;
+  }
+}
+@media (max-width: 480px) {
+  .page .project-information .logo {
+    height: auto;
+    display: block;
+    padding: 0;
+  }
+}
+@media (max-width: 1024px) {
+  .page .project-information .logo {
+  }
+}
+#projects > div.fullpage-container > div > div {
+  background-size: contain;
+}
+@media (max-width: 425px) {
+  .project-list-navigation {
+    display: none;
+  }
+  .page {
+    background-size: contain;
+    height: 332px !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .page {
+    background-size: contain;
+    height: 250px !important;
+  }
 }
 </style>
