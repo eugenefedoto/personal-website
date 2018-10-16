@@ -3,27 +3,27 @@
     <div class="" style="padding-top:47px">
       <picture>
         <source srcset="@/assets/personal-website.png" media="(max-width: 768px)">
-        <img class="page active" src="@/assets/originals/personal-website.png">
+        <img id="project1" data-scroll="in" class="page active" src="@/assets/originals/personal-website.png">
       </picture>
       <picture>
         <source srcset="@/assets/love-you-forever.png" media="(max-width: 768px)">
-        <img class="page active" src="@/assets/originals/love-you-forever.png">
+        <img id="project2" data-scroll="in" class="page active" src="@/assets/originals/love-you-forever.png">
       </picture>
       <picture>
         <source srcset="@/assets/bike-location-finder-v1.png" media="(max-width: 768px)">
-        <img class="page active" src="@/assets/originals/bike-location-finder-v1.png">
+        <img id="project3" data-scroll="in" class="page active" src="@/assets/originals/bike-location-finder-v1.png">
       </picture>
       <picture>
         <source srcset="@/assets/bike-location-finder-v2.png" media="(max-width: 768px)">
-        <img class="page active" src="@/assets/originals/bike-location-finder-v2.png">
+        <img id="project4" data-scroll="in" class="page active" src="@/assets/originals/bike-location-finder-v2.png">
       </picture>
       <picture>
         <source srcset="@/assets/gladiator-studios.png" media="(max-width: 768px)">
-        <img class="page active" src="@/assets/originals/gladiator-studios.png">
+        <img id="project5" data-scroll="in" class="page active" src="@/assets/originals/gladiator-studios.png">
       </picture>
       <picture>
         <source srcset="@/assets/my-gold-animals.png" media="(max-width: 768px)">
-        <img class="page active" src="@/assets/originals/my-gold-animals.png">
+        <img id="project6" data-scroll="in" class="page active" src="@/assets/originals/my-gold-animals.png">
       </picture>
     </div>
     <div class="project-list-navigation">
@@ -31,24 +31,36 @@
         <!---->
         <div class="project-list-window">
           <ul id="projectListBottom" class="project-list list-unstyled list-inline" style="left: 0px;">
-            <li v-bind:class="{active: active1}" v-on:click="makeActive1">
-              <div class="icon" :style="{ backgroundImage: 'url(' + require('@/assets/pw-quickmenu-icon.png') + ')' }"></div> <span>Personal Website</span>
-            </li>
-            <li v-bind:class="{active: active2}" v-on:click="makeActive2">
-              <div class="icon" :style="{ backgroundImage: 'url(' + require('@/assets/lyf-quickmenu-icon.png') + ')' }"></div> <span>LoveYouForever</span>
-            </li>
-            <li v-bind:class="{active: active3}" v-on:click="makeActive3">
-              <div class="icon" :style="{ backgroundImage: 'url(' + require('@/assets/bikev1-quickmenu-icon.png') + ')' }"></div> <span>Bike Finder</span>
-            </li>
-            <li v-bind:class="{active: active4}" v-on:click="makeActive4">
-              <div class="icon" :style="{ backgroundImage: 'url(' + require('@/assets/bikev2-quickmenu-icon.png') + ')' }"></div> <span>Bike Finder 2</span>
-            </li>
-            <li v-bind:class="{active: active5}" v-on:click="makeActive5">
-              <div class="icon" :style="{ backgroundImage: 'url(' + require('@/assets/gs-quickmenu-icon.png') + ')' }"></div> <span>Gladiator Studios</span>
-            </li>
-            <li v-bind:class="{active: active6}" v-on:click="makeActive6">
-              <div class="icon" :style="{ backgroundImage: 'url(' + require('@/assets/mga-quickmenu-icon.png') + ')' }"></div> <span>My Gold Animals</span>
-            </li>
+            <a href="#project1">
+              <li v-bind:class="{active: active1}" v-on:click="makeActive1">
+                <div class="icon" :style="{ backgroundImage: 'url(' + require('@/assets/pw-quickmenu-icon.png') + ')' }"></div> <span>Personal Website</span>
+              </li>
+            </a>
+            <a href="#project2">
+              <li v-bind:class="{active: active2}" v-on:click="makeActive2">
+                <div class="icon" :style="{ backgroundImage: 'url(' + require('@/assets/lyf-quickmenu-icon.png') + ')' }"></div> <span>LoveYouForever</span>
+              </li>
+            </a>
+            <a href="#project3">
+              <li v-bind:class="{active: active3}" v-on:click="makeActive3">
+                <div class="icon" :style="{ backgroundImage: 'url(' + require('@/assets/bikev1-quickmenu-icon.png') + ')' }"></div> <span>Bike Finder</span>
+              </li>
+            </a>
+            <a href="#project4">
+              <li v-bind:class="{active: active4}" v-on:click="makeActive4">
+                <div class="icon" :style="{ backgroundImage: 'url(' + require('@/assets/bikev2-quickmenu-icon.png') + ')' }"></div> <span>Bike Finder 2</span>
+              </li>
+            </a>
+            <a href="#project5">
+              <li v-bind:class="{active: active5}" v-on:click="makeActive5">
+                <div class="icon" :style="{ backgroundImage: 'url(' + require('@/assets/gs-quickmenu-icon.png') + ')' }"></div> <span>Gladiator Studios</span>
+              </li>
+            </a>
+            <a href="#project6">
+              <li v-bind:class="{active: active6}" v-on:click="makeActive6">
+                <div class="icon" :style="{ backgroundImage: 'url(' + require('@/assets/mga-quickmenu-icon.png') + ')' }"></div> <span>My Gold Animals</span>
+              </li>
+            </a>
           </ul>
         </div>
 
@@ -77,6 +89,7 @@
 </template>
 
 <script>
+import ScrollOut from "scroll-out";
 export default {
   data(){
     return{
@@ -135,8 +148,41 @@ export default {
       this.active3 = false;
       this.active4 = false;
       this.active5 = false;
-      this.active6 = false;
+      this.active1 = false;
     }
+  },
+  mounted(){
+    const that = this;
+    this.so = ScrollOut({
+      scope: this.$el,
+      threshold: 0.8,
+      onShown(el) {
+    switch(el.id){
+      case "project1":
+      that.makeActive1();
+      break;
+      case "project2":
+      that.makeActive2();
+      break;
+      case "project3":
+      that.makeActive3();
+      break;
+      case "project4":
+      that.makeActive4();
+      break;
+      case "project5":
+      that.makeActive5();
+      break;
+      case "project6":
+      that.makeActive6();
+      break;
+    }
+  }
+    });
+    
+  },
+  destroyed() {
+    this.so.teardown();
   }
 }
 </script>

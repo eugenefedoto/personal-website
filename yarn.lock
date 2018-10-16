@@ -6060,6 +6060,10 @@ schema-utils@^1.0.0:
     ajv-errors "^1.0.0"
     ajv-keywords "^3.1.0"
 
+scroll-out@^2.2.3:
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/scroll-out/-/scroll-out-2.2.3.tgz#2db2fce789b3269f7895ffc5d4a60ef04bd0416f"
+
 scss-tokenizer@^0.2.3:
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/scss-tokenizer/-/scss-tokenizer-0.2.3.tgz#8eb06db9a9723333824d3f5530641149847ce5d1"
@@ -7051,6 +7055,10 @@ watchpack@^1.5.0:
     chokidar "^2.0.2"
     graceful-fs "^4.1.2"
     neo-async "^2.5.0"
+
+waypoints@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/waypoints/-/waypoints-4.0.1.tgz#09979a0573810b29627cba4366a284a062ec69c8"
 
 wbuf@^1.1.0, wbuf@^1.7.2:
   version "1.7.3"
