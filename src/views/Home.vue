@@ -39,16 +39,6 @@
         </div>
 
         <div class="feature story">
-          <h2>My Story</h2>
-          <p>I became enthralled with the world of hardware and software ever since I got my hands on a Sega Genesis.
-            Trying to understand every detail behind the scenes became a fascination. Entering cheat codes in order to change the machine code
-            was a beautiful ordeal for me. As I got further into games, I became increasingly more interested in manipulating the bit world.
-          </p>
-          <p>
-            It started out with programming mathematical functions on my TI-83 before ending up spending my weekends trying out a new Linux flavor on the high school
-            weekends. These days, I spend my time being obsessed over learning and improving my skills in whatever area related to computers I'm focusing on.
-            The number one goal is to have fun with what I'm doing.
-          </p>
         </div>
       </div>
     </div>
