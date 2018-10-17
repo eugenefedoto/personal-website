@@ -9,6 +9,7 @@
     "eslint-check": "eslint --print-config . | eslint-config-prettier-check"
   },
   "dependencies": {
+    "bulma": "^0.7.2",
     "normalize.css": "^8.0.0",
     "scroll-out": "^2.2.3",
     "vue": "^2.5.17",

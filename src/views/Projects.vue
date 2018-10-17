@@ -1,30 +1,78 @@
 <template>
   <div id="projects">
     <div class="" style="padding-top:47px">
-      <picture>
-        <source srcset="@/assets/personal-website.png" media="(max-width: 768px)">
-        <img id="project1" data-scroll="in" class="page active" src="@/assets/originals/personal-website.png">
-      </picture>
-      <picture>
-        <source srcset="@/assets/love-you-forever.png" media="(max-width: 768px)">
-        <img id="project2" data-scroll="in" class="page active" src="@/assets/originals/love-you-forever.png">
-      </picture>
-      <picture>
-        <source srcset="@/assets/bike-location-finder-v1.png" media="(max-width: 768px)">
-        <img id="project3" data-scroll="in" class="page active" src="@/assets/originals/bike-location-finder-v1.png">
-      </picture>
-      <picture>
-        <source srcset="@/assets/bike-location-finder-v2.png" media="(max-width: 768px)">
-        <img id="project4" data-scroll="in" class="page active" src="@/assets/originals/bike-location-finder-v2.png">
-      </picture>
-      <picture>
-        <source srcset="@/assets/gladiator-studios.png" media="(max-width: 768px)">
-        <img id="project5" data-scroll="in" class="page active" src="@/assets/originals/gladiator-studios.png">
-      </picture>
-      <picture>
-        <source srcset="@/assets/my-gold-animals.png" media="(max-width: 768px)">
-        <img id="project6" data-scroll="in" class="page active" src="@/assets/originals/my-gold-animals.png">
-      </picture>
+      <div class="wrapper">
+        <picture>
+          <source srcset="@/assets/personal-website.png" media="(max-width: 768px)">
+          <img id="project1" data-scroll="in" class="page active" src="@/assets/originals/personal-website.png">
+        </picture>
+        <div class="hslide_box">
+          <span class="hslide_header">Personal Website</span>
+          <span class="hslide_copy">Vue - SCSS - Webpack - Grid - Flex <p>My personal website created from scratch.</p></span>
+          <span class="hslide_cta"><a href="http://efedotov.moe" target="_blank">Visit Online</a></span>
+          <span class="hslide_cta"><a href="https://github.com/eugenefedoto/personal-website" target="_blank">GitHub</a></span>
+        </div>
+      </div>
+      <div class="wrapper">
+        <picture>
+          <source srcset="@/assets/love-you-forever.png" media="(max-width: 768px)">
+          <img id="project2" data-scroll="in" class="page active" src="@/assets/originals/love-you-forever.png">
+        </picture>
+        <div class="hslide_box">
+          <span class="hslide_header">LoveYouForever</span>
+          <span class="hslide_copy">Vue - CSS Grid - Laravel - Docker - Apache <p>A creative playground for developing my skills - based on the hit game and anime Amagami SS.</p></span>
+          <span class="hslide_cta"><a href="https://github.com/eugenefedoto/LoveYouForever" target="_blank">GitHub</a></span>
+        </div>
+      </div>
+      <div class="wrapper">
+        <picture>
+          <source srcset="@/assets/bike-location-finder-v1.png" media="(max-width: 768px)">
+          <img id="project3" data-scroll="in" class="page active" src="@/assets/originals/bike-location-finder-v1.png">
+        </picture>
+        <div class="hslide_box">
+          <span class="hslide_header">Bike Finder v1</span>
+          <span class="hslide_copy">Vue - Semantic UI - Node.js - MongoDB <p>Google Maps for bikes, with over 400k interactive points. A first place, team project for the https://fullstack.network/ contest.</p></span>
+          <span class="hslide_cta"><a href="https://seagulltuna.neuralspaz.com" target="_blank">Visit Online</a></span>
+          <span class="hslide_cta"><a href="https://github.com/getbikesharedone/seagulltuna" target="_blank">GitHub</a></span>
+        </div>
+      </div>
+      <div class="wrapper">
+        <picture>
+          <source srcset="@/assets/bike-location-finder-v2.png" media="(max-width: 768px)">
+          <img id="project4" data-scroll="in" class="page active" src="@/assets/originals/bike-location-finder-v2.png">
+        </picture>
+        <div class="hslide_box">
+          <span class="hslide_header">Bike Finder v2</span>
+          <span class="hslide_copy">Vue - Vuetify - Go - SQLite - Mapillary <p>Version 2 of the Bike Network Location Finder. I redesigned the entire UI to have cleaner code, be modular, and use the Vuetify library..</p></span>
+          <span class="hslide_cta"><a href="https://seagulltunav2.neuralspaz.com" target="_blank">Visit Online</a></span>
+          <span class="hslide_cta"><a href="https://github.com/getbikesharedone/seagulltunav2" target="_blank">GitHub</a></span>
+        </div>
+      </div>
+
+      <div class="wrapper">
+        <picture>
+          <source srcset="@/assets/gladiator-studios.png" media="(max-width: 768px)">
+          <img id="project5" data-scroll="in" class="page active" src="@/assets/originals/gladiator-studios.png">
+        </picture>
+        <div class="hslide_box">
+          <span class="hslide_header">Gladiator Studios</span>
+          <span class="hslide_copy">HTML - CSS - JavaScript - Adobe Photoshop <p>A portfolio website, involving Gladiator jewelry, that I created for a jeweler.</p></span>
+          <span class="hslide_cta"><a href="http://www.gladiator-studios.com/" target="_blank">Visit Online</a></span>
+        </div>
+      </div>
+      <div class="wrapper">
+        <picture>
+          <source srcset="@/assets/my-gold-animals.png" media="(max-width: 768px)">
+          <img id="project6" data-scroll="in" class="page active" src="@/assets/originals/my-gold-animals.png">
+        </picture>
+        <div class="hslide_box">
+          <span class="hslide_header">My Gold Animals</span>
+          <span class="hslide_copy">HTML - CSS - JavaScript - Bootstrap - Adobe Photoshop - PrestaShop
+            <p>Another portfolio website, but this time for pet jewelry, that I created for a jeweler. This time an ecommerce backend was added.</p></span>
+          <span class="hslide_cta"><a href="http://mygoldanimals.com/" target="_blank">Visit Online</a></span>
+        </div>
+      </div>
+
     </div>
     <div class="project-list-navigation">
       <div class="project-list-wrapper">
@@ -187,6 +235,7 @@ export default {
 
 <style lang="scss" scoped>
 .wrapper {
+  position: relative;
   .card-project {
     background: #2e3138;
     box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.7);
@@ -616,6 +665,9 @@ p {
     opacity: 1;
   }
 }
+p {
+  width: 100%;
+}
 @media (max-height: 980px) {
   .fullpage-container .page .project-information {
     padding-top: 80px;
@@ -668,5 +720,129 @@ p {
     background-size: contain;
     height: 250px !important;
   }
+}
+.hslide_box {
+  background: rgba(61, 44, 95, 0.7);
+}
+.hslide_box {
+  margin-left: 7%;
+  padding: 27px 2.5em 32px;
+  position: absolute;
+  bottom: 100px;
+  max-width: 40%;
+  min-width: 41%;
+  min-height: 115px;
+  background: rgba(0, 0, 0, 0.7);
+}
+.hslide_box .hslide_header {
+  color: #ebebeb;
+}
+.hslide_box .hslide_copy,
+.hslide_box .hslide_cta a,
+.hslide_box .hslide_header {
+  font-family: Cinzel, serif;
+}
+.hslide_box .hslide_header {
+  display: block;
+  font-size: 1.938em;
+  line-height: 1em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.hslide_box .hslide_copy {
+  color: #9779f2;
+}
+.hslide_box .hslide_copy {
+  display: block;
+  font-size: 1.25em;
+  font-weight: 700;
+  margin-top: 13px;
+  text-transform: uppercase;
+}
+.hslide_box .hslide_cta {
+  color: #fff;
+}
+.hslide_box .hslide_cta {
+  font-size: 1.063em;
+  margin-top: 27px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.hslide_box .hslide_cta a {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.9);
+  color: #fff;
+  border: 1px solid #a172ff;
+  background: #6e36df;
+  background: -moz-linear-gradient(
+    top,
+    rgba(110, 54, 223, 1) 0,
+    rgba(92, 40, 195, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(110, 54, 223, 1) 0,
+    rgba(92, 40, 195, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(110, 54, 223, 1) 0,
+    rgba(92, 40, 195, 1) 100%
+  );
+}
+.hslide_box .hslide_copy,
+.hslide_box .hslide_cta a,
+.hslide_box .hslide_header {
+  font-family: Cinzel, serif;
+}
+.hslide_box .hslide_cta a {
+  display: inline-block;
+  font-size: 1em;
+  text-transform: uppercase;
+  padding: 8px 2.12em 7px;
+  text-decoration: none;
+  font-weight: 700;
+}
+.hslide_box {
+  position: absolute;
+  padding: 2% 2.5%;
+  min-width: 35%;
+  top: 100px;
+  background: rgba(61, 44, 95, 0.85);
+  height: 300px;
+}
+.hslide_copy {
+  p {
+    text-transform: none;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .hslide_box {
+    margin-left: 0;
+    width: 95%;
+    max-width: 95%;
+    top: 100%;
+    bottom: initial;
+    min-height: initial;
+    padding: 1em 2.5% 1.5em;
+    line-height: 2em;
+  }
+  p {
+    max-width: 768px;
+  }
+  .wrapper,
+  #projects > div {
+    // display: flex;
+    // flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .hslide_box {
+    position: static;
+    height: initial;
+  }
+}
+@media only screen and (max-width: 320px) {
 }
 </style>
