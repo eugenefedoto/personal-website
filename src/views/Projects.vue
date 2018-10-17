@@ -113,7 +113,7 @@
         </div>
 
       </div>
-      <div class="all-projects">
+      <!-- <div class="all-projects">
         <div class="icon"><a class="">
             <svg data-v-6c07c8b2="" id="icon-all-project" viewBox="0 0 36 36" width="100%" height="100%">
               <path data-v-6c07c8b2="" d="M7.72,6h5.14a1.72,1.72,0,0,1,1.72,1.71v5.15a1.72,1.72,0,0,1-1.72,1.71H7.72A1.71,1.71,0,0,1,6,12.89V7.74A1.71,1.71,0,0,1,7.72,6Z" transform="translate(-6.01 -6.03)" class="white"></path>
@@ -128,7 +128,7 @@
             </svg>
             All Projects
           </a></div>
-      </div>
+      </div> -->
 
       <div class="clearfix"></div>
     </div>
