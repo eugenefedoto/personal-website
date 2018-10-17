@@ -29,10 +29,12 @@
           </ul>
           <ul>
             Past Roles
-            <li>Lead frontend development.</li>
-            <li>Developed Node.js services.</li>
-            <li>Converted web designs.</li>
+            <li>Lead frontend development at Dell</li>
+            <li>Developed Node.js services for APPrise Mobile.</li>
+            <li>Converted web designs as a freelancer.</li>
           </ul>
+          <div><a href="/Eugene_Fedotov_Resume.pdf">Resume</a></div>
+          <div><a href="https://github.com/eugenefedoto">GitHub</a></div>
 
         </div>
 
