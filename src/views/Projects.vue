@@ -79,36 +79,36 @@
         <!---->
         <div class="project-list-window">
           <ul id="projectListBottom" class="project-list list-unstyled list-inline" style="left: 0px;">
-            <a href="#project1">
+            <router-link to="#project1">
               <li v-bind:class="{active: active1}" v-on:click="makeActive1">
                 <div class="icon" :style="{ backgroundImage: 'url(' + require('@/assets/pw-quickmenu-icon.png') + ')' }"></div> <span>Personal Website</span>
               </li>
-            </a>
-            <a href="#project2">
+            </router-link>
+            <router-link to="#project2">
               <li v-bind:class="{active: active2}" v-on:click="makeActive2">
                 <div class="icon" :style="{ backgroundImage: 'url(' + require('@/assets/lyf-quickmenu-icon.png') + ')' }"></div> <span>LoveYouForever</span>
               </li>
-            </a>
-            <a href="#project3">
+            </router-link>
+            <router-link to="#project3">
               <li v-bind:class="{active: active3}" v-on:click="makeActive3">
                 <div class="icon" :style="{ backgroundImage: 'url(' + require('@/assets/bikev1-quickmenu-icon.png') + ')' }"></div> <span>Bike Finder</span>
               </li>
-            </a>
-            <a href="#project4">
+            </router-link>
+            <router-link to="#project4">
               <li v-bind:class="{active: active4}" v-on:click="makeActive4">
                 <div class="icon" :style="{ backgroundImage: 'url(' + require('@/assets/bikev2-quickmenu-icon.png') + ')' }"></div> <span>Bike Finder 2</span>
               </li>
-            </a>
-            <a href="#project5">
+            </router-link>
+            <router-link to="#project5">
               <li v-bind:class="{active: active5}" v-on:click="makeActive5">
                 <div class="icon" :style="{ backgroundImage: 'url(' + require('@/assets/gs-quickmenu-icon.png') + ')' }"></div> <span>Gladiator Studios</span>
               </li>
-            </a>
-            <a href="#project6">
+            </router-link>
+            <router-link to="#project6">
               <li v-bind:class="{active: active6}" v-on:click="makeActive6">
                 <div class="icon" :style="{ backgroundImage: 'url(' + require('@/assets/mga-quickmenu-icon.png') + ')' }"></div> <span>My Gold Animals</span>
               </li>
-            </a>
+            </router-link>
           </ul>
         </div>
 
