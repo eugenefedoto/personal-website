@@ -10,7 +10,11 @@
         <div class="desc"><span class="uppercase subject">hacker - creator</span></div>
         <div class="center">
           <a href="#about" class="uppercase hero-cta">learn more</a>
+
         </div>
+        <router-link to="/projects" class="uppercase hero-cta">
+          projects
+        </router-link>
       </div>
     </div>
     <div class="content">
@@ -35,6 +39,11 @@
           </ul>
           <div><a href="/Eugene_Fedotov_Resume.pdf">Resume</a></div>
           <div><a href="https://github.com/eugenefedoto">GitHub</a></div>
+          <div>
+            <router-link to="/projects" class="projects-cta">
+              Projects
+            </router-link>
+          </div>
 
         </div>
 
@@ -153,6 +162,9 @@ export default class Home extends Vue {}
       display: none;
     }
   }
+  .projects-cta {
+    display: none;
+  }
   .header {
     align-items: center;
   }
@@ -161,6 +173,11 @@ export default class Home extends Vue {}
       height: 100px;
       z-index: 1;
     }
+  }
+}
+@media only screen and (max-width: 426px) {
+  .projects-cta {
+    display: inline;
   }
 }
 .feature {
